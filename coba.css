@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body { 
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 80px 1fr 70px;  
+    grid-template-columns: 20% 1fr 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    background: #03001c;
+}
+
+/*warna #03001c #301E67 #5B8FB9 #B6EADA */
+  
+header, footer, article, nav, div {
+    padding: 1.2em;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2em;
+}
+  
+#pageHeader {
+    grid-area: header;
+    background-color: #5B8FB9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+  
+#pageFooter {
+    grid-area: footer;
+}
+
+#mainArticle { 
+    grid-area: article;      
+}
+  
+#mainNav { 
+    grid-area: nav; 
+}
+ 
+#siteAds { 
+    grid-area: ads; 
+} 
+  
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+    body { 
+      grid-template-areas: 
+        "header"
+        "article"
+        "ads"
+        "nav"
+        "footer";
+      grid-template-rows: 80px 1fr 70px 1fr 70px;  
+      grid-template-columns: 1fr;
+   }
+}
+
+.homelogo {
+    border-radius: 100vw;
+    background-color: #B6EADA;
+    aspect-ratio: 1 / 1;
+    padding: 1vh;
+}
+
+.homelogo img {
+    width: 3vw;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    white-space: nowrap;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+}
+
+header a:not(:first-child) {
+    margin-left: 1em;
+    padding: 0.8em 1.2em;
+}
+
+.weblogo {
+    aspect-ratio: 1/1;
+    height: 5vw;
+    margin-right: auto;
+    justify-content: flex-start;
+}
