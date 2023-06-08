@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap');
 
 :root {
     /* --primary : #5B8FB9 ;
@@ -189,10 +190,6 @@ body {
     box-shadow: 1px 1px 3px rgba(3, 0, 28,0.5);
 }
 
-.quote {
-    color: white;
-    font-weight: 900;
-}
 
 /* Hero end */
 
@@ -237,13 +234,42 @@ body {
 .about .row .content h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .about .row .content p {
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.6rem;
+    text-align: center;
+}
+
+.about .row .content .arab {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 3rem;
+    line-height: normal;
+}
+
+.about .mulai {
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--satu);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(3, 0, 28,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* About End */
